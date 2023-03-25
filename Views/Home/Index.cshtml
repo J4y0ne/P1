@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Completar datos</h1>
+</div>
+
+<form>
+  <div class="form-group mt-3">
+    <label for="Numerotarjeta">Numero de tarjeta</label>
+    <input type="text" class="form-control" id="Numerotarjeta" aria-describedby="Cardhelp" placeholder="Ingresar tarjeta">
+  </div>
+  <div class="form-group mt-3">
+    <label for="Fechapago">Fecha de vencimiento de pago</label>
+    <input type="date" class="form-control" id="fechavenc" placeholder="Ingresar fecha de vencimiento">
+  </div>
+   <div class="form-group mt-3">
+    <label for="Montopago">Monto a pagar</label>
+    <input type="number" min="1" step="1" class="form-control" id="ejemplomontopago" placeholder="Pago">
+  </div>
+  <button type="button" class="btn btn-primary mt-3" id="botoncal">Calcular</button>
+ <div class="form-group mt-3">
+    <label for="exampleInputPassword1">Resultado</label>
+    <input type="number" class="form-control" id="resultado">
+  </div>
+</form>
